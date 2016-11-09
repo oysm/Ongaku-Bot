@@ -20,8 +20,10 @@ Discord bot for playing music, our first time making bot pls be nice
 - [ ] Normalizing audio
 - [ ] Vote to skip (Majority of connected users in voice channel vote to skip or the user who added the song skips)
 - [ ] Playing information command (length / current time / source url / user who added song)
-- [ ] Set default channel for bot messages
+
 
 
 # Non music TODO:
+- [ ] Set default channel for bot messages
+- [ ] Set prefix for commands
 - [ ] Polls that stay the in the most recent 5 messages on the designated bot channel and can be voted on once by each user, with the same message being edited to update results. Detailed information on polls provided on command.
