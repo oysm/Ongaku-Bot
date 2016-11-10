@@ -1,6 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = '';
+var Config;
+
+try {
+  Config = require('./config.json')
+} catch (e) {
+  console.log('\n\'config.json\' not found.')
+  process.exit()
+}
+
 
 // Ready
 bot.on('ready', () => {
@@ -15,7 +23,7 @@ bot.on('message', message => {
 });
 
 // Log in
-bot.login(token);
+bot.login(Config.bot.token);
 
 // Auth link 
 // discordapp.com/oauth2/authorize?client_id= &scope=bot&permissions=37223488
