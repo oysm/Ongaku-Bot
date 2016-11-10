@@ -19,6 +19,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
   if (message.content === '.test') {
     message.channel.sendMessage("it works");
+    message.delete('message', 1500);
   }
 });
 
